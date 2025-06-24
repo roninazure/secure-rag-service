@@ -1,0 +1,19 @@
+name: Python CI
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with: python-version: "3.9"
+      - run: |
+          python -m venv venv
+          source venv/bin/activate
+          pip install -r requirements.txt
+          flake8 src tests
+          pytest --junitxml=reports/results.xml
+      - uses: actions/upload-artifact@v3
+        with:
+          name: pytest-report
+          path: reports/results.xml

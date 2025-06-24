@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+boto3
+pinecone-client
+pytest
+flake8

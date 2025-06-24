@@ -1,3 +1,13 @@
-venv/
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+venv/
+
+# Terraform
+*.tfstate
+*.tfstate.backup
+.terraform/
+
+# Editor
+*.swp
+.DS_Store
