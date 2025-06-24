@@ -1,6 +1,6 @@
 fastapi
 uvicorn[standard]
 boto3
-pinecone-client
+pinecone
 pytest
 flake8
