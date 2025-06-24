@@ -18,8 +18,8 @@ jobs:
         with:
           python-version: '3.9'
 
-      # 3) Install dependencies, lint, and test
-      - name: Install & test
+      # 3) Install deps, lint, and run tests
+      - name: Install, lint & test
         run: |
           python -m venv venv
           source venv/bin/activate
@@ -29,9 +29,9 @@ jobs:
           mkdir -p reports
           pytest --junitxml=reports/results.xml
 
-      # 4) Upload JUnit XML for later inspection
+      # 4) Upload the JUnit report
       - name: Upload test report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: pytest-report
           path: reports/results.xml
