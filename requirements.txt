@@ -1,6 +1,8 @@
 fastapi
-uvicorn[standard]
+uvicorn
 boto3
-pinecone 
+pinecone
 pytest
+pytest-cov
 flake8
+junit-xml
