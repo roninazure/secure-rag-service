@@ -1,3 +1,4 @@
+# .github/workflows/python-ci.yml
 name: Python CI
 
 on:
@@ -7,36 +8,44 @@ on:
     branches: [ main ]
 
 jobs:
-  test:
+  build-and-test:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [ "3.9" ]
+
     steps:
-      - name: Checkout code
+      - name: 🔄 Check out repository
         uses: actions/checkout@v3
 
-      - name: Set up Python
+      - name: ⚙️ Cache pip
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: 🐍 Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v4
         with:
-          python-version: '3.9'
+          python-version: ${{ matrix.python-version }}
 
-      - name: Install dependencies
+      - name: 📦 Install dependencies
         run: |
-          python -m venv venv
-          source venv/bin/activate
-          pip install --upgrade pip
+          python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Lint with flake8
-        run: |
-          source venv/bin/activate
-          flake8 src tests
+      - name: 🧹 Lint with flake8
+        run: flake8 src tests
 
-      - name: Run tests
+      - name: 🧪 Run pytest
         run: |
           mkdir -p reports
-          source venv/bin/activate
           pytest --junitxml=reports/results.xml
 
-      - name: Upload test report
+      - name: 📝 Upload test report
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: pytest-report
