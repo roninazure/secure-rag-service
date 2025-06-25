@@ -1,4 +1,4 @@
-# PrivateGPT Service
+# Secure RAG Service
 
 ![Python CI](https://github.com/roninazure/privategpt-service/actions/workflows/python-ci.yml/badge.svg)
 
