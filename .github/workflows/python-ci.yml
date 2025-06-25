@@ -1,35 +1,42 @@
 name: Python CI
-
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
   pull_request:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      # 1) Check out your repo
-      - uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-      # 2) Set up Python 3.9
-      - uses: actions/setup-python@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
         with:
-          python-version: '3.9'
+          python-version: '3.10'
 
-      # 3) Install deps, lint, and run tests
-      - name: Install, lint & test
+      - name: Install dependencies
         run: |
-          python -m venv venv
-          source venv/bin/activate
+          python -m venv .venv
+          source .venv/bin/activate
           pip install --upgrade pip
           pip install -r requirements.txt
+
+      - name: Lint with flake8
+        run: |
+          source .venv/bin/activate
           flake8 src tests
+
+      - name: Run tests
+        run: |
+          source .venv/bin/activate
           mkdir -p reports
           pytest --junitxml=reports/results.xml
 
-      # 4) Upload the JUnit report
       - name: Upload test report
         uses: actions/upload-artifact@v4
         with:
