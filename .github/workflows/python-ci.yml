@@ -1,7 +1,5 @@
-# .github/workflows/python-ci.yml
 name: Python CI
 
-# 1) We only run on pushes or PRs into main—so no unexpected branches
 on:
   push:
     branches: [ main ]
@@ -10,46 +8,39 @@ on:
 
 jobs:
   build-and-test:
-    # 2) Always use the latest Ubuntu runner
     runs-on: ubuntu-latest
-
-    # 3) If in future you support multiple Py versions, you can extend this matrix
     strategy:
       matrix:
-        python-version: [ "3.9" ]
+        python-version: [3.9]
 
     steps:
-      # ──────────────────────────────────────────────────────────────────────────────
-      # 4) Get your code
-      - name: 🔄 Checkout code
+      - name: Checkout code
         uses: actions/checkout@v3
 
-      # 5) Install exactly the Python you want
-      - name: ⚙️ Setup Python ${{ matrix.python-version }}
+      - name: Setup Python ${{ matrix.python-version }}
         uses: actions/setup-python@v4
         with:
           python-version: ${{ matrix.python-version }}
 
-      # 6) Upgrade pip, install your dependencies
-      - name: 🐍 Install dependencies
+      - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+          # ensure linter & test runner are available
+          pip install flake8 pytest
 
-      # 7) Lint your code—this fails early if style issues crop up
-      - name: 🧹 Lint with flake8
-        run: flake8 src/ tests/
-
-      # 8) Run pytest, spit out a JUnit-style XML in a guaranteed folder
-      - name: 🧪 Run pytest and produce JUnit report
+      - name: Lint with flake8
         run: |
-          mkdir -p ci_reports
-          pytest --maxfail=1 --disable-warnings --junitxml=ci_reports/report.xml
+          flake8 src tests
 
-      # 9) Upload that XML so you can inspect it in “Artifacts”
-      - name: 📄 Upload pytest JUnit report
-        if: always()        # even if tests fail, we still upload the logs
+      - name: Run pytest
+        run: |
+          # this will create ci_reports/results.xml
+          pytest --junitxml=ci_reports/results.xml --maxfail=1 --disable-warnings -q
+
+      - name: Upload test report
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: pytest-junit
-          path: ci_reports/report.xml
+          name: pytest-report
+          path: ci_reports/results.xml
