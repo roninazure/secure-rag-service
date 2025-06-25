@@ -1,5 +1,13 @@
 # tests/conftest.py
-import os, sys
 
-# Prepend the project root (one level up) to sys.path so `src` can be imported
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir)))
+import os
+import sys
+
+# add project root to the import path
+PROJECT_ROOT = os.path.abspath(
+    os.path.join(
+        os.path.dirname(__file__),
+        os.pardir,
+    )
+)
+sys.path.insert(0, PROJECT_ROOT)
