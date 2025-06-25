@@ -1,5 +1,7 @@
 # PrivateGPT Service
 
+![Python CI](https://github.com/roninazure/privategpt-service/actions/workflows/python-ci.yml/badge.svg)
+
 **Proof-of-Concept** of a private RAG pipeline using FastAPI, AWS Bedrock & Pinecone.
 
 ## Getting Started
