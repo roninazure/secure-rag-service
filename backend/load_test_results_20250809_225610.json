@@ -1,0 +1,122 @@
+[
+  {
+    "user_id": 0,
+    "query_num": 1,
+    "response_time": 15.699200868606567,
+    "status": 200,
+    "success": true,
+    "query": "What are the billing rates for partners?..."
+  },
+  {
+    "user_id": 0,
+    "query_num": 2,
+    "response_time": 1.9571568965911865,
+    "status": 200,
+    "success": true,
+    "query": "How do I request PTO?..."
+  },
+  {
+    "user_id": 0,
+    "query_num": 3,
+    "response_time": 20.117686986923218,
+    "status": 200,
+    "success": true,
+    "query": "What's the remote work policy?..."
+  },
+  {
+    "user_id": 1,
+    "query_num": 1,
+    "response_time": 2.060263156890869,
+    "status": 200,
+    "success": true,
+    "query": "What are the billing rates for partners?..."
+  },
+  {
+    "user_id": 1,
+    "query_num": 2,
+    "response_time": 3.30778431892395,
+    "status": 200,
+    "success": true,
+    "query": "How do I request PTO?..."
+  },
+  {
+    "user_id": 1,
+    "query_num": 3,
+    "response_time": 6.392905950546265,
+    "status": 200,
+    "success": true,
+    "query": "What's the remote work policy?..."
+  },
+  {
+    "user_id": 2,
+    "query_num": 1,
+    "response_time": 9.964082956314087,
+    "status": 200,
+    "success": true,
+    "query": "What are the billing rates for partners?..."
+  },
+  {
+    "user_id": 2,
+    "query_num": 2,
+    "response_time": 1.7890570163726807,
+    "status": 200,
+    "success": true,
+    "query": "How do I request PTO?..."
+  },
+  {
+    "user_id": 2,
+    "query_num": 3,
+    "response_time": 6.323753118515015,
+    "status": 200,
+    "success": true,
+    "query": "What's the remote work policy?..."
+  },
+  {
+    "user_id": 3,
+    "query_num": 1,
+    "response_time": 2.3858327865600586,
+    "status": 200,
+    "success": true,
+    "query": "What are the billing rates for partners?..."
+  },
+  {
+    "user_id": 3,
+    "query_num": 2,
+    "response_time": 1.9776389598846436,
+    "status": 200,
+    "success": true,
+    "query": "How do I request PTO?..."
+  },
+  {
+    "user_id": 3,
+    "query_num": 3,
+    "response_time": 15.247846841812134,
+    "status": 200,
+    "success": true,
+    "query": "What's the remote work policy?..."
+  },
+  {
+    "user_id": 4,
+    "query_num": 1,
+    "response_time": 2.0414180755615234,
+    "status": 200,
+    "success": true,
+    "query": "What are the billing rates for partners?..."
+  },
+  {
+    "user_id": 4,
+    "query_num": 2,
+    "response_time": 21.015270948410034,
+    "status": 200,
+    "success": true,
+    "query": "How do I request PTO?..."
+  },
+  {
+    "user_id": 4,
+    "query_num": 3,
+    "response_time": 20.415403127670288,
+    "status": 200,
+    "success": true,
+    "query": "What's the remote work policy?..."
+  }
+]
