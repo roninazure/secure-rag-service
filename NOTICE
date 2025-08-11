@@ -1,0 +1,8 @@
+NexusAI – Private GPT / Secure RAG Service
+Copyright (c) 2025 Scott Steele
+
+This product bundles third-party components as listed in:
+- THIRD_PARTY_BACKEND.md
+- THIRD_PARTY_FRONTEND.json
+
+Each third-party component is licensed under its own terms.
