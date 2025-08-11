@@ -1,13 +1,60 @@
-# Python
+# ---- OS / Editors ----
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# ---- Python ----
+.venv/
+venv/
 __pycache__/
 *.py[cod]
-venv/
+*.pyo
+*.egg*
+dist/
+build/
+.eggs/
+.wheelhouse/
+.coverage
+htmlcov/
+.tox/
+.pytest_cache/
+.mypy_cache/
+.cache/
 
-# Terraform
-*.tfstate
-*.tfstate.backup
+# ---- Node / Frontend (if UI present) ----
+node_modules/
+pnpm-lock.yaml
+yarn.lock
+npm-debug.log*
+.vite/
+dist/
+coverage/
+*.map
+
+# ---- Env / Secrets ----
+.env
+.env.*
+!.env.example
+*.key
+*.crt
+*.pem
+
+# ---- Logs / tmp ----
+*.log
+logs/
+tmp/
+*.tar.gz
+
+# ---- Terraform / IaC ----
 .terraform/
+terraform.tfstate
+terraform.tfstate.*
+crash.log
+*.tfvars
+*.tfvars.json
 
-# Editor
-*.swp
-.DS_Store
+# ---- Misc build artifacts ----
+*.sqlite3
+data/
+documents/
