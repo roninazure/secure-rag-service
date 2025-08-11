@@ -1,2 +1,4 @@
-{}
-
+[
+  {"name":"react","license":"MIT"},
+  {"name":"lucide-react","license":"ISC"}
+]
