@@ -1,0 +1,209 @@
+{
+  "timestamp": "2025-08-09T09:33:20.933269",
+  "statistics": {
+    "total_questions": 20,
+    "successful_responses": 18,
+    "success_rate": 0.9,
+    "average_latency": 3.639726888888889
+  },
+  "results": {
+    "Billing & Rates": [
+      {
+        "question": "What are the hourly rates for senior partners?",
+        "response_length": 63,
+        "latency": 1.430071,
+        "has_answer": true,
+        "keywords_found": [
+          "$",
+          "hour",
+          "750"
+        ],
+        "issues": []
+      },
+      {
+        "question": "How much is the initial retainer for new clients?",
+        "response_length": 48,
+        "latency": 1.257393,
+        "has_answer": false,
+        "keywords_found": [
+          "$25,000",
+          "retainer"
+        ],
+        "issues": []
+      },
+      {
+        "question": "What expenses are clients responsible for beyond hourly fees?",
+        "response_length": 371,
+        "latency": 3.378828,
+        "has_answer": true,
+        "keywords_found": [],
+        "issues": []
+      },
+      {
+        "question": "What is the billing increment for time tracking?",
+        "response_length": 64,
+        "latency": 1.441968,
+        "has_answer": true,
+        "keywords_found": [],
+        "issues": []
+      }
+    ],
+    "HR & Policies": [
+      {
+        "question": "Who handles HR matters at the firm?",
+        "response_length": 51,
+        "latency": 1.290339,
+        "has_answer": true,
+        "keywords_found": [],
+        "issues": [
+          "Admission of lack of knowledge"
+        ]
+      },
+      {
+        "question": "What is the remote work policy?",
+        "response_length": 297,
+        "latency": 2.608718,
+        "has_answer": true,
+        "keywords_found": [],
+        "issues": []
+      },
+      {
+        "question": "How many CLE hours are required annually?",
+        "response_length": 67,
+        "latency": 1.702152,
+        "has_answer": true,
+        "keywords_found": [],
+        "issues": []
+      },
+      {
+        "question": "What is the professional development reimbursement amount?",
+        "response_length": 59,
+        "latency": 1.262393,
+        "has_answer": true,
+        "keywords_found": [],
+        "issues": []
+      }
+    ],
+    "Legal Procedures": [
+      {
+        "question": "What documents must be preserved during a litigation hold?",
+        "response_length": 185,
+        "latency": 5.836127,
+        "has_answer": true,
+        "keywords_found": [
+          "documents"
+        ],
+        "issues": []
+      },
+      {
+        "question": "What are the consequences of not preserving documents?",
+        "response_length": 333,
+        "latency": 4.398627,
+        "has_answer": true,
+        "keywords_found": [],
+        "issues": []
+      },
+      {
+        "question": "What is included in the scope of legal representation?",
+        "response_length": 589,
+        "latency": 4.810203,
+        "has_answer": true,
+        "keywords_found": [],
+        "issues": [
+          "Contains template placeholders"
+        ]
+      },
+      {
+        "question": "What are liquidated damages for confidentiality breaches?",
+        "response_length": 75,
+        "latency": 4.4958,
+        "has_answer": true,
+        "keywords_found": [],
+        "issues": []
+      }
+    ],
+    "Case Law & Research": [
+      {
+        "question": "What did Mavrix Photo v. Brand Techs establish?",
+        "response_length": 159,
+        "latency": 6.460359,
+        "has_answer": true,
+        "keywords_found": [
+          "Mavrix",
+          "website",
+          "something more"
+        ],
+        "issues": []
+      },
+      {
+        "question": "How does the Calder effects test work?",
+        "response_length": 220,
+        "latency": 4.397171,
+        "has_answer": true,
+        "keywords_found": [],
+        "issues": []
+      },
+      {
+        "question": "What are the three prongs for specific jurisdiction?",
+        "response_length": 205,
+        "latency": 2.457431,
+        "has_answer": true,
+        "keywords_found": [
+          "HR"
+        ],
+        "issues": []
+      },
+      {
+        "question": "What factors determine reasonableness of jurisdiction?",
+        "response_length": 0,
+        "latency": 0,
+        "has_answer": false,
+        "keywords_found": [],
+        "issues": [
+          "Request failed: HTTPConnectionPool(host='localhost', port=8000): Read timed out. (read timeout=10)"
+        ]
+      }
+    ],
+    "Complex Queries": [
+      {
+        "question": "Compare the billing rates for all attorney levels and explain the retainer process",
+        "response_length": 174,
+        "latency": 3.174406,
+        "has_answer": true,
+        "keywords_found": [
+          "$",
+          "hour",
+          "450",
+          "350"
+        ],
+        "issues": []
+      },
+      {
+        "question": "What are all the forms of documents that need to be preserved and where might they be stored?",
+        "response_length": 670,
+        "latency": 5.662394,
+        "has_answer": true,
+        "keywords_found": [],
+        "issues": []
+      },
+      {
+        "question": "Explain the complete process for establishing personal jurisdiction in internet defamation cases",
+        "response_length": 0,
+        "latency": 0,
+        "has_answer": false,
+        "keywords_found": [],
+        "issues": [
+          "Request failed: HTTPConnectionPool(host='localhost', port=8000): Read timed out. (read timeout=10)"
+        ]
+      },
+      {
+        "question": "What are the client's responsibilities in an engagement and what happens if they don't pay?",
+        "response_length": 499,
+        "latency": 9.450704,
+        "has_answer": true,
+        "keywords_found": [],
+        "issues": []
+      }
+    ]
+  }
+}
