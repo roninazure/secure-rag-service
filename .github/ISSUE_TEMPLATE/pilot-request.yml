@@ -1,0 +1,31 @@
+name: Pilot request
+description: Request a 30-day PrivateGPT pilot
+title: "Pilot Request"
+labels: ["lead","event-sep13"]
+assignees: ["roninazure"]
+body:
+  - type: input
+    id: name
+    attributes: {label: Your name, placeholder: "Jane Doe"}
+    validations: {required: true}
+  - type: input
+    id: company
+    attributes: {label: Company, placeholder: "Acme Bank"}
+    validations: {required: true}
+  - type: dropdown
+    id: industry
+    attributes:
+      label: Industry
+      options: ["Law", "Healthcare", "Financial Services", "Other"]
+    validations: {required: true}
+  - type: textarea
+    id: usecase
+    attributes: {label: Primary use case, placeholder: "Intake Q&A, policy RAG, etc."}
+    validations: {required: true}
+  - type: input
+    id: email
+    attributes: {label: Work email}
+    validations: {required: true}
+  - type: input
+    id: phone
+    attributes: {label: Phone (optional)}
