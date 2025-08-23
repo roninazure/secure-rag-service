@@ -7,7 +7,7 @@
 | < v0.2  | ❌ End-of-life |
 
 ## Reporting a Vulnerability
-Use GitHub “Report a vulnerability” (Security tab) or email security@yourdomain.com
+Use GitHub “Report a vulnerability” (Security tab) or email roninazure@gmail.com
 
 Please include: impact, PoC, affected version/commit, repro steps, suggested severity.
 
