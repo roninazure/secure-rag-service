@@ -1,5 +1,8 @@
 # ---- OS / Editors ----
 .DS_Store
+._*
+.Spotlight-V100
+.Trashes
 .idea/
 .vscode/
 *.swp
@@ -16,16 +19,16 @@ build/
 .eggs/
 .wheelhouse/
 .coverage
+coverage.xml
 htmlcov/
 .tox/
 .pytest_cache/
 .mypy_cache/
+.ruff_cache/
 .cache/
 
-# ---- Node / Frontend (if UI present) ----
+# ---- Node / Frontend ----
 node_modules/
-pnpm-lock.yaml
-yarn.lock
 npm-debug.log*
 .vite/
 dist/
@@ -33,9 +36,12 @@ coverage/
 *.map
 
 # ---- Env / Secrets ----
-.env
-.env.*
+**/.env
+**/.env.*
 !.env.example
+.envrc
+.npmrc
+.pypirc
 *.key
 *.crt
 *.pem
@@ -58,3 +64,14 @@ crash.log
 *.sqlite3
 data/
 documents/
+
+# Frontend
+frontend/node_modules
+frontend/dist
+frontend/.env
+frontend/.DS_Store
+
+# Backend
+backend/.venv
+backend/__pycache__/
+backend/.env
