@@ -1,13 +1,11 @@
 # PrivateGPT • Secure RAG Service
 
-[🚀 Pilot Request](../../issues/new?template=pilot-request.yml&title=Pilot+Request+%5BSep+13%5D)
-[📄 One-Pager](../../releases/latest/download/PrivateGPT_OnePager.pdf) ·
-[📇 vCard](../../releases/latest/download/Scott_Steele.vcf) ·
-[🧪 3-min Demo](#run-a-3-minute-demo) ·
+[📄 One-Pager](./public/PrivateGPT_OnePager.pdf) ·
+[📇 vCard](./public/Scott_Steele.vcf) ·
+[🗓️ Sep 13 (ICS)](./public/PrivateGPT_Sep13.ics) ·
 [💬 Ask a Question](../../discussions/new?category=q-a) ·
-[▶️ Open in Codespaces](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=roninazure%2Fsecure-rag-service) ·
-[🚀 Pilot Request](../../issues/new?template=pilot-request.md&labels=lead,event-sep13)
-
+[🧪 3-min Demo](#run-a-3-minute-demo) ·
+[🚀 Pilot Request](../../issues/new?template=pilot-request.yml&title=Pilot+Request+%5BSep+13%5D)
 
 # Secure RAG Service (NexusAI)
 
