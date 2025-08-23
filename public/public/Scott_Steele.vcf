@@ -1,0 +1,9 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Steele;Scott;;;
+FN:Scott Steele
+ORG:Nexus AI
+TITLE:Principal — PrivateGPT | Secure RAG Service
+URL:https://github.com/roninazure/secure-rag-service
+NOTE:Add email and phone after download if desired.
+END:VCARD
