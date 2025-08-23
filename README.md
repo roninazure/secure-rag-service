@@ -7,7 +7,7 @@
 [▶️ Open in Codespaces](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=roninazure%2Fsecure-rag-service) ·
 [🚀 Pilot Request](../../issues/new?template=pilot-request.md&labels=lead,event-sep13)
 
-cat > README.md <<'EOF'
+
 # Secure RAG Service (NexusAI)
 
 A production-ready Retrieval-Augmented Generation (RAG) backend with a simple chat API.  
