@@ -1,5 +1,6 @@
 # PrivateGPT • Secure RAG Service
 
+[🚀 Pilot Request](../../issues/new?template=pilot-request.yml&title=Pilot+Request+%5BSep+13%5D)
 [📄 One-Pager](../../releases/latest/download/PrivateGPT_OnePager.pdf) ·
 [📇 vCard](../../releases/latest/download/Scott_Steele.vcf) ·
 [🧪 3-min Demo](#run-a-3-minute-demo) ·
