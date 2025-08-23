@@ -1,3 +1,12 @@
+# PrivateGPT • Secure RAG Service
+
+[📄 One-Pager](../../releases/latest/download/PrivateGPT_OnePager.pdf) ·
+[📇 vCard](../../releases/latest/download/Scott_Steele.vcf) ·
+[🧪 3-min Demo](#run-a-3-minute-demo) ·
+[💬 Ask a Question](../../discussions/new?category=q-a) ·
+[▶️ Open in Codespaces](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=roninazure%2Fsecure-rag-service) ·
+[🚀 Pilot Request](../../issues/new?template=pilot-request.md&labels=lead,event-sep13)
+
 cat > README.md <<'EOF'
 # Secure RAG Service (NexusAI)
 
