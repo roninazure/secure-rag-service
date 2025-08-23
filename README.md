@@ -1,8 +1,8 @@
 # PrivateGPT • Secure RAG Service
 
-[📄 One-Pager](./public/PrivateGPT_OnePager.pdf?raw=1) ·
-[📇 vCard](./public/Scott_Steele.vcf?raw=1) ·
-[🗓️ Sep 13 (ICS)](./public/PrivateGPT_Sep13.ics?raw=1)·
+[📄 One-Pager](https://raw.githubusercontent.com/roninazure/secure-rag-service/main/public/PrivateGPT_OnePager.pdf) ·
+[📇 vCard](https://raw.githubusercontent.com/roninazure/secure-rag-service/main/public/Scott_Steele.vcf) ·
+[🗓️ Sep 13 (ICS)](https://raw.githubusercontent.com/roninazure/secure-rag-service/main/public/PrivateGPT_Sep13.ics)
 [💬 Ask a Question](../../discussions/new?category=q-a) ·
 [🧪 3-min Demo](#run-a-3-minute-demo) ·
 [🚀 Pilot Request](../../issues/new?template=pilot-request.yml&title=Pilot+Request+%5BSep+13%5D)
